@@ -7,7 +7,7 @@ class Autores:
         mi_cursor.execute(sql)
         resultado = mi_cursor.fetchall()
         return resultado
-   
+    
     def consultar(self, id):
         sql = f"SELECT * FROM autores WHERE idAutor='{id}'"
         mi_cursor.execute(sql)

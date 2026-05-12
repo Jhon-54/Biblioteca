@@ -19,7 +19,6 @@ class ListaAutores(Resource):
         else:
             return jsonify({"mensaje": "Id de autor ya existe"})
 
-
 class Autor(Resource):
     def get(self, id):
         resultado = mis_autores.consultar(id)
